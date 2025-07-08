@@ -1,0 +1,142 @@
+body, html, #root, .fancy-app-bg {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+.fancy-container {
+  background: #fff;
+  max-width: 500px;
+  margin: 40px auto;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10), 0 1.5px 6px rgba(0,0,0,0.08);
+  padding: 32px 28px 28px 28px;
+}
+
+.fancy-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 18px;
+  color: #2d3a4b;
+  letter-spacing: 1px;
+}
+
+.fancy-days-bar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.fancy-day-btn {
+  background: #f0f4fa;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  color: #2d3a4b;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  margin-bottom: 4px;
+}
+.fancy-day-btn.selected, .fancy-day-btn:hover {
+  background: #4f8cff;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.10);
+}
+
+.fancy-content {
+  margin-top: 10px;
+}
+
+.fancy-saved-data {
+  background: #f7fafd;
+  border-radius: 8px;
+  padding: 18px 16px 10px 16px;
+  margin-bottom: 22px;
+  box-shadow: 0 1px 4px rgba(79,140,255,0.04);
+}
+.fancy-saved-block {
+  margin-bottom: 10px;
+}
+.fancy-saved-value {
+  margin-left: 8px;
+  color: #2d3a4b;
+  font-size: 1.08rem;
+  display: inline-block;
+}
+.fancy-empty {
+  color: #b0b8c1;
+  font-style: italic;
+}
+
+.fancy-saved-list {
+  list-style: disc inside;
+  margin: 6px 0 0 0;
+  padding-left: 18px;
+  color: #2d3a4b;
+  font-size: 1.08rem;
+}
+.fancy-saved-list li {
+  margin-bottom: 2px;
+}
+
+.fancy-form {
+  background: #f4f8fb;
+  border-radius: 8px;
+  padding: 18px 16px 10px 16px;
+  box-shadow: 0 1px 4px rgba(79,140,255,0.04);
+}
+.fancy-form-group {
+  margin-bottom: 16px;
+}
+.fancy-input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #c3d0e0;
+  padding: 8px;
+  font-size: 1rem;
+  margin-top: 4px;
+  background: #fff;
+  resize: vertical;
+  transition: border 0.2s;
+}
+.fancy-input:focus {
+  border: 1.5px solid #4f8cff;
+  outline: none;
+}
+.fancy-save-btn {
+  background: linear-gradient(90deg, #4f8cff 0%, #6fc3ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 6px;
+  box-shadow: 0 2px 8px rgba(79,140,255,0.10);
+}
+.fancy-save-btn:disabled {
+  background: #b0b8c1;
+  cursor: not-allowed;
+}
+.fancy-error {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.fancy-success {
+  color: #27ae60;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.fancy-loading {
+  text-align: center;
+  color: #4f8cff;
+  font-size: 1.2rem;
+  margin: 30px 0;
+}
